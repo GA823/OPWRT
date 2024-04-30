@@ -37,6 +37,8 @@ echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.defa
 if [[ $WRT_URL == *"lede"* ]]; then
 	echo "CONFIG_PACKAGE_luci-app-ssr-plus=y" >> ./.config
 	echo "CONFIG_PACKAGE_luci-app-openclash=y" >> ./.config
+        echo "CONFIG_PACKAGE_luci-app-passwall2=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-app-vssr=y" >> ./.config
 elif [[ $WRT_URL == *"immortalwrt"* ]]; then
 	echo "CONFIG_PACKAGE_luci=y" >> ./.config
 	echo "CONFIG_LUCI_LANG_zh_Hans=y" >> ./.config
